@@ -98,7 +98,7 @@
 
         // Add typing effect to the role text
         const roleText = document.querySelector('.role span');
-        const roles = ['YouTuber', 'Web Designer', 'Frontend Developer', 'Java Developer'];
+        const roles = [ 'Web Designer', 'Frontend Developer', 'Java Developer'];
         let roleIndex = 0;
         let charIndex = 0;
         let isDeleting = false;
