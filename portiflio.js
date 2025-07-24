@@ -128,7 +128,7 @@ function sendMail() {
     let parms = {
         name: document.getElementById("name").value,
         email: document.getElementById("email").value,
-        subject: document.getElementById("subjec").value, // NOTE: typo in 'subjec'
+        subject: document.getElementById("subject").value, // NOTE: typo in 'subjec'
         message: document.getElementById("message").value
     };
 
