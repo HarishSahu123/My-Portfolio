@@ -63,13 +63,6 @@
             });
         });
 
-        // Form submission
-        document.querySelector('form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Thank you for your message! I will get back to you soon.');
-            this.reset();
-        });
-
         // Intersection Observer for animations
         const observerOptions = {
             threshold: 0.1,
@@ -127,3 +120,36 @@
 
         // Start typing effect
         setTimeout(typeEffect, 1000);
+
+
+   //email sending 
+
+function sendMail() {
+    let parms = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        subject: document.getElementById("subjec").value, // NOTE: typo in 'subjec'
+        message: document.getElementById("message").value
+    };
+
+    emailjs.send("service_3iaithr", "template_vquc2ev", parms)
+        .then(response => {
+            alert("Message sent successfully ✅");
+            console.log("SUCCESS!", response.status, response.text);
+        })
+        .catch(error => {
+            alert("Failed to send message ❌");
+            console.log("FAILED...", error);
+        });
+}
+
+
+ // // Form submission
+ //        document.querySelector('form').addEventListener('submit', function(e) {
+ //            e.preventDefault();
+ //            alert('Thank you for your message! I will get back to you soon.');
+ //            this.reset();
+ //        });
+
+
+
