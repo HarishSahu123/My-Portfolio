@@ -91,7 +91,7 @@
 
         // Add typing effect to the role text
         const roleText = document.querySelector('.role span');
-        const roles = [ 'Web Designer', 'Frontend Developer', 'Java Developer'];
+        const roles = ['Java Developer'];
         let roleIndex = 0;
         let charIndex = 0;
         let isDeleting = false;
@@ -150,6 +150,7 @@ function sendMail() {
             alert('Thank you for your message! I will get back to you soon.');
             this.reset();
         });
+
 
 
 
